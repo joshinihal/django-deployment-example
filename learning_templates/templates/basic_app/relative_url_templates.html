@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to relative templates url</h1>
+    <!-- here basic app is the string saved to app_name in urls.py a -->
+    <!-- here other is the name parameter given to the url -->
+    <!-- don't use space in 'basic_app:other'  -->
+    <a href="{% url 'basic_app:other' %}">Click for other page</a>
+    <a href="{% url 'admin:index'%}">Click for admin</a>
+    <a href="{% url 'index' %}">Click for indeex</a>
+</body>
+</html>
